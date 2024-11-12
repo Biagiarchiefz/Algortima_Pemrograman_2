@@ -29,10 +29,7 @@ public class Teman {
             System.out.println("Nama :" + wa);
             bday=d;
             System.out.println("Tanggal Lahir :" + bday.dd + "/" + bday.mm + "/" + bday.y);
-
         }
-
-
 
 //    static void Salin (array_teman L1, array_teman L2) {
 //        for (int i = 0; i < L1; i++) {
@@ -43,7 +40,6 @@ public class Teman {
         public static void main(String[] args) {
 
             Teman T = new Teman();
-
             T.baca_teman();
             T.tampil_teman();
 

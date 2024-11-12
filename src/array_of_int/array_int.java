@@ -63,16 +63,41 @@ public class array_int {
         }
 
         void binary_Search () {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("X : ");
+            int X = sc.nextInt();
 
+            int i_awal = 0;
+            int i_akhir = N - 1;
+            boolean stop = false;
+
+            int k = 0;
+            while ((i_awal <= i_akhir) && (stop == false )) {
+                k = ( i_awal + i_akhir ) / 2;
+                if (X == a[k])
+                    stop = true;
+                else
+                    if (a[k] > X)
+                        i_akhir = k-1; // i++
+                    else
+                        i_awal = k + 1;
+            }
+
+            if (stop == true) {
+                System.out.println(X + " ketemu indeks ke " + k );
+            } else {
+                System.out.println( X + " Tidak ditemukan ");
+            }
         }
 
         void bubbleSort () {
+            // menugurtkan array menaik
             int k;
             int temp;
             int i = 1;
             while (i <= N) {
                 k = N -1;
-                while ( k > i) {
+                while ( k >= i) {
                     if (a[k] < a [k -1 ]) {
                         temp = a [k - 1];
                         a[k - 1] = a[k];
@@ -92,10 +117,12 @@ public class array_int {
 
             A.Bacaarr();
             A.tampilarr();
+            System.out.println("Hasil urut");
             A.bubbleSort();
+            A.tampilarr();
+            A.binary_Search();
+//            A.SequntialSearch_1();
         }
-
-
 
 
     }
