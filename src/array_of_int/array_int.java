@@ -114,7 +114,6 @@ public class array_int {
         public static void main(String[] args) {
             array_int A = new array_int();
 
-
             A.Bacaarr();
             A.tampilarr();
             System.out.println("Hasil urut");
