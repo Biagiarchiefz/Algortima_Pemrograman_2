@@ -8,32 +8,36 @@ public class matriks_int {
     int N=2;
         int [][] a=new int[N][M];
 
-        void InitMatrix(){
-            for (int i=0;i<N;i++){
-                for (int j=0;j<M;j++){ a[i][j]=0;
-                }
+
+    void InitMatrix() {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                a[i][j] = 0;
             }
         }
+    }
 
-        void ReadMatrix(){
-            Scanner sc= new Scanner(System.in);
-            for (int i=0;i<N;i++){
-                for (int j=0;j<M;j++){
-                    System.out.print("elemen[ "+i+","+j+"]"); int x=sc.nextInt();
-                    a[i][j]=x;
-                    System.out.print(a[i][j]+" ");
-                }
+
+    void ReadMatrix(){
+        Scanner sc= new Scanner(System.in);
+        for (int i=0;i<N;i++){
+            for (int j=0;j<M;j++){
+                System.out.print("elemen[ "+i+","+j+"]");
+                int x=sc.nextInt();
+                a[i][j]=x;
             }
         }
+    }
 
-        void ShowMatrix(){
-            for (int i=0;i<N;i++){
-                for (int j=0;j<M;j++){
-                    System.out.println(a[i][j] + " ");
-                }
+
+    void ShowMatrix(){
+        for (int i=0;i<N;i++){
+            for (int j=0;j<M;j++){
+                System.out.print(a[i][j]+" ");
+            }
             System.out.println();
         }
-        }
+    }
 
 
     public static void main(String[] args) {
