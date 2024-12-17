@@ -40,6 +40,8 @@ public class matriks_int {
     }
 
 
+
+
     public static void main(String[] args) {
         matriks_int A = new matriks_int();
         matriks_int B = new matriks_int();
@@ -54,3 +56,4 @@ public class matriks_int {
 
     }
 }
+
