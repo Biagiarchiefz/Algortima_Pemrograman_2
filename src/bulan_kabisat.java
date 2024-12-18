@@ -53,6 +53,7 @@ public class bulan_kabisat {
 
             System.out.println("Jumlah hari: " + NumHari);
             System.out.println("");
+            System.out.println("");
         }
     }
 
